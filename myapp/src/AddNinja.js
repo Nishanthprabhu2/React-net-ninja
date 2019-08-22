@@ -20,6 +20,14 @@ class AddNinja extends Component{
         belt: '' 
        })
     }
+    componentDidMount(){
+        console.log("component mounted");
+      }
+      componentDidUpdate(prevProps, prevState){
+    console.log("component updated");
+    console.log("prevprop =>", prevProps);
+    console.log("prevstate =>", prevState);
+      }
     render(){
         return(
             <div>
